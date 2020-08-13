@@ -1,0 +1,43 @@
+@import "../../../assets/styles/variables.scss";
+
+table {
+    min-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.mat-header-cell {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+}
+
+//even
+//Representa elementos cuya posición numérica en una serie de hermanos es par: 2, 4, 6, etc.
+.mat-row:nth-child(even) {
+    background-color: $white;
+}
+
+//odd
+//Representa elementos cuya posición numérica en una serie de hermanos es impar: 1, 3, 5, etc.
+.mat-row:nth-child(odd) {
+    background-color: $red;
+    & .mat-cell {
+        color: $white;
+    }
+}
+
+.mat-cell:first-letter{
+    text-transform: uppercase;
+}
+
+.mat-row:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 5px $yellow;
+}
+
+::ng-deep.mat-paginator{
+    width: 80%;
+    margin: auto;
+  }
