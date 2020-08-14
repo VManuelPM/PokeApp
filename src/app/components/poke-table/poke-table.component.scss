@@ -1,5 +1,12 @@
 @import "../../../assets/styles/variables.scss";
 
+.container{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
 table {
     min-width: 80%;
     margin: auto;
@@ -28,7 +35,7 @@ table {
     }
 }
 
-.mat-cell:first-letter{
+.mat-cell:first-letter {
     text-transform: uppercase;
 }
 
@@ -37,7 +44,26 @@ table {
     box-shadow: inset 0 0 0 5px $yellow;
 }
 
-::ng-deep.mat-paginator{
+::ng-deep.mat-paginator {
     width: 80%;
     margin: auto;
-  }
+}
+
+.mat-form-field {
+    font-size: 13px;
+    width: 20%;
+
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+::ng-deep.mat-form-field-label {
+    color: $white !important;
+}
+::ng-deep.mat-form-field-underline {
+    background-color: $white !important;
+}
+
+input {
+    color: $white !important;
+}
