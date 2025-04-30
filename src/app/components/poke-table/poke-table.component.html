@@ -1,13 +1,13 @@
 <div class="container">
-
+  <div>
     <mat-form-field>
         <mat-label>Filter</mat-label>
-        <input matInput (keyup)="applyFilter($event)" #input>
+        <input matInput (keyup)="applyFilter($event)" #input class="input-search">
     </mat-form-field>
+  </div>
 
+  <div class="table">
     <table mat-table [dataSource]="dataSource">
-
-
         <ng-container matColumnDef="position">
             <th mat-header-cell *matHeaderCellDef> No. </th>
             <td mat-cell *matCellDef="let element"> {{element.position}} </td>
@@ -37,5 +37,9 @@
         </tr>
 
     </table>
+  </div>
 
-    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  <div class="paginator">
+    <mat-paginator class="width100" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  </div>
+</div>

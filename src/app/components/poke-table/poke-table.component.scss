@@ -1,69 +1,86 @@
 @import "../../../assets/styles/variables.scss";
 
-.container{
-    width: 100%;
-    margin-top: 20px;
-    text-align: center;
+.container {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
-table {
-    min-width: 80%;
-    margin: auto;
-    text-align: center;
+.table {
+  padding: 20px;
+  width: 80%;
 }
 
 .mat-header-cell {
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    font-size: 15px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+}
+
+.input-search{
+  color: #bd3736 !important;
 }
 
 //even
 //Representa elementos cuya posición numérica en una serie de hermanos es par: 2, 4, 6, etc.
 .mat-row:nth-child(even) {
-    background-color: $white;
+  background-color: $white;
 }
 
 //odd
 //Representa elementos cuya posición numérica en una serie de hermanos es impar: 1, 3, 5, etc.
 .mat-row:nth-child(odd) {
-    background-color: $red;
-    & .mat-cell {
-        color: $white;
-    }
+  background-color: $red;
+
+  & .mat-cell {
+    color: $white;
+  }
 }
 
 .mat-cell:first-letter {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .mat-row:hover {
-    cursor: pointer;
-    box-shadow: inset 0 0 0 5px $yellow;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 5px $yellow;
 }
 
 ::ng-deep.mat-paginator {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .mat-form-field {
-    font-size: 13px;
-    width: 20%;
+  font-size: 13px;
+  width: 20%;
 
-    margin-bottom: 5px;
-    padding: 10px;
+  margin-bottom: 5px;
+  padding: 10px;
 }
 
 ::ng-deep.mat-form-field-label {
-    color: $white !important;
+  color: $white !important;
 }
+
 ::ng-deep.mat-form-field-underline {
-    background-color: $white !important;
+  background-color: $white !important;
 }
 
 input {
-    color: $white !important;
+  color: $white !important;
+}
+
+.paginator {
+  display: flex;
+  justify-content: center;
+  min-width: 80%;
+}
+
+.width100 {
+  width: 100%;
 }
