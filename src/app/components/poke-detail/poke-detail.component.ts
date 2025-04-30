@@ -14,11 +14,11 @@ export class PokeDetailComponent implements OnInit {
   pokemonType = [];
 
   constructor(private activatedRouter: ActivatedRoute,
-    private pokemonService: PokemonService) {
+              private pokemonService: PokemonService) {
 
     this.activatedRouter.params.subscribe(
       params => {
-        this.getPokemon(params['id']);
+        this.getPokemon(params.id);
       }
     )
   }

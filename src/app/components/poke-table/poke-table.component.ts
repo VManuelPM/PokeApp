@@ -61,7 +61,6 @@ export class PokeTableComponent implements OnInit {
 
 
   getRow(row){
-    //console.log(row);
     this.router.navigateByUrl(`/pokeDetail/${row.position}`)
   }
 

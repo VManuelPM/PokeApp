@@ -22,7 +22,7 @@ import {MatChipsModule} from '@angular/material/chips';
     MatTableModule,
     MatPaginatorModule,
     MatFormFieldModule,
-    MatInputModule, 
+    MatInputModule,
     MatChipsModule
   ],
   exports: [
