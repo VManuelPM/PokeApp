@@ -1,5 +1,4 @@
 import {expect, test} from '@playwright/test';
-import {environment} from '../../src/environments/environment';
 
 test('Buscar un Pokémon por nombre', async ({page}) => {
   await page.goto('http://localhost:4200');
